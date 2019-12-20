@@ -1,0 +1,13 @@
+node_modules/
+package-lock.json
+yarn.lock
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+.idea
+log/
+yarn.lock
+.DS_Store
