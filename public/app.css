@@ -57,6 +57,68 @@ span.psw {
   padding-top: 16px;
 }
 
+.user-title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-wrapper {
+  padding: 50px 0px;
+}
+
+.user-block {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.user-item {
+  width: 35%;
+  border: 1px solid black;
+  margin: 35px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.user-pagination {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: inline-block;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pagination li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination li a {
+  color: black;
+}
+
+.pagination li.active {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid #4CAF50;
+}
+
+.pagination li:hover:not(.active) {background-color: #ddd;}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {

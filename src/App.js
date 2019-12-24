@@ -12,6 +12,7 @@ const App = () => {
       <Switch>
         <Route exact path="/login" component={UserLogin} />
         <Route exact path="/" component={requireAuthUser(Users)} />
+        <Route exact path="/users" component={requireAuthUser(Users)} />
         <Route exact path="/logout" component={requireAuthUser(UserLogout)} />
       </Switch>
     </Router>

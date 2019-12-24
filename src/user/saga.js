@@ -45,7 +45,7 @@ async function callGetUserData(userId) {
     callBack: function (response) {
       responseObject = {
         success: true,
-        userData: response.data.response
+        userData: response.data.response.user
       }
     },
     catchError: function(error) {
