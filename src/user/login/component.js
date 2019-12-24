@@ -27,21 +27,21 @@ export class Login extends React.Component {
     })
   }
 
-  removeValidateWarning = () => {
-    let loginForm = this.state.loginForm
+  removeValidateWarning() {
+    const loginForm = this.state.loginForm
     loginForm.isEmailValid = true
     this.setState({
       loginForm: loginForm
     })
   }
 
-  handleChangeCheckbox = () => {
+  handleChangeCheckbox() {
     this.setState({
       loginForm: { ...this.state.loginForm, isSave: !this.state.loginForm.isSave }
     })
   }
 
-  handleSubmit = () => {
+  handleSubmit() {
     this.removeValidateWarning()
     const email = this.state.loginForm.email
     const password = this.state.loginForm.password
@@ -64,7 +64,7 @@ export class Login extends React.Component {
     })
   }
 
-  renderMessage = () => {
+  renderMessage() {
     if (!this.state.loginForm.isEmailValid) {
       return <p className="text-danger">{this.state.loginForm.messageValidateEmail}</p>
     }
