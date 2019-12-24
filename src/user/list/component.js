@@ -77,7 +77,7 @@ export class List extends React.Component {
 
   render() {
     const users = this.state.userList.map(user => {
-      return <div className = "user-item">
+      return <div key = {user.id} className = "user-item">
         <p className = "user-item-id">ID: {user.id}</p>
         <p className = "user-item-name">Name: {user.name}</p>
         <p className = "user-item-email">Email: {user.email}</p>
